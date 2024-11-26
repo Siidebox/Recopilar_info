@@ -131,6 +131,34 @@ def get_gpu_info():
 
     return gpu_info or [{"Error": "No se pudo obtener información de las GPUs"}]
 
+def get_motherboard_info():
+    # Recopila información de la placa base para macOS, Windows y Linux.
+    motherboard_info = {}
+
+    if platform.system() == "Darwin":
+        motherboard_info["Error"] = "Información de la placa base no disponible en macOS mediante comandos estándar"
+
+    elif platform.system() == "Windows":
+        cmd = "wmic baseboard get product,manufacturer,version,serialnumber /format:list"
+        output = execute_command(cmd, description="información de la placa base en Windows")
+        for line in output.splitlines():
+            if "=" in line:
+                key, value = line.split("=", 1)
+                motherboard_info[key.strip()] = value.strip()
+
+    else:
+        if not command_exists("dmidecode"):
+            return {"Error": "Comando dmidecode no disponible"}
+        cmd = "sudo dmidecode -t baseboard | grep -E 'Manufacturer|Product Name|Version|Serial Number'"
+        output = execute_command(cmd, description="información de la placa base en Linux")
+        for line in output.splitlines():
+            if ":" in line:
+                key, value = line.split(":", 1)
+                motherboard_info[key.strip()] = value.strip()
+
+    return motherboard_info or {"Error": "No se pudo obtener información de la placa base"}
+
+
 def get_memory_info():
     # Recopila información detallada de la memoria RAM para macOS, Windows y Linux.
     memory_info = []
@@ -287,6 +315,11 @@ def main():
     print("\n=== Información del Procesador (CPU) ===")
     print(cpu_info)
 
+    # Placa Base
+    motherboard_info = get_motherboard_info()
+    print("\n=== Información de la Placa Base ===")
+    print(motherboard_info)
+
     # Tarjetas Gráficas (GPU)
     gpu_info = get_gpu_info()
     print("\n=== Información de las Tarjetas Gráficas (GPU) ===")
@@ -306,6 +339,7 @@ def main():
     full_data = {
         "Sistema Operativo": system_info,
         "CPU": cpu_info,
+        "Placa Base": motherboard_info,
         "GPUs": gpu_info,
         "RAM": memory_info,
         "Almacenamiento": storage_info,
