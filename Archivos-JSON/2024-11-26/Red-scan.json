@@ -1,0 +1,43 @@
+{
+    "(127.0.0.1)": {
+        "Estado": "Activo",
+        "Puertos": [
+            {
+                "Puerto": "135",
+                "Protocolo": "tcp",
+                "Estado": "open",
+                "Servicio": "msrpc",
+                "Versión": "Microsoft Windows RPC"
+            },
+            {
+                "Puerto": "137",
+                "Protocolo": "tcp",
+                "Estado": "filtered",
+                "Servicio": "netbios-ns",
+                "Versión": "Desconocida"
+            },
+            {
+                "Puerto": "445",
+                "Protocolo": "tcp",
+                "Estado": "open",
+                "Servicio": "microsoft-ds?",
+                "Versión": "Desconocida"
+            },
+            {
+                "Puerto": "902",
+                "Protocolo": "tcp",
+                "Estado": "open",
+                "Servicio": "ssl/vmware-auth",
+                "Versión": "VMware Authentication Daemon 1.10 (Uses VNC, SOAP)"
+            },
+            {
+                "Puerto": "912",
+                "Protocolo": "tcp",
+                "Estado": "open",
+                "Servicio": "vmware-auth",
+                "Versión": "VMware Authentication Daemon 1.0 (Uses VNC, SOAP)"
+            }
+        ]
+    },
+    "Comando": "nmap -p 0-1023 -sV 127.0.0.1"
+}

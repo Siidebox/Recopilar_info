@@ -5,10 +5,17 @@ import subprocess
 import re
 from datetime import datetime
 
+
 def execute_command(command, description=""):
     # Ejecuta un comando en la terminal y maneja posibles errores.
     try:
-        result = subprocess.run(command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True)
+        result = subprocess.run(
+            command,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            shell=True,
+        )
         if result.returncode != 0:
             raise RuntimeError(f"Error en '{description}': {result.stderr.strip()}")
         return result.stdout.strip()
@@ -17,9 +24,16 @@ def execute_command(command, description=""):
     except Exception as e:
         return f"Error general en '{description}': {str(e)}"
 
+
 def command_exists(command):
     # Verifica si un comando está disponible en el sistema.
-    return subprocess.run(f"command -v {command}", shell=True, stdout=subprocess.PIPE).returncode == 0
+    return (
+        subprocess.run(
+            f"command -v {command}", shell=True, stdout=subprocess.PIPE
+        ).returncode
+        == 0
+    )
+
 
 def get_system_info():
     # Recopila información básica del sistema operativo.
@@ -28,15 +42,13 @@ def get_system_info():
             return {"Error": "Comando sw_vers no disponible en macOS"}
         cmd = "sw_vers"
         output = execute_command(cmd, description="información del sistema en macOS")
-        return {
-            "Nombre del Sistema Operativo": "macOS",
-            "Detalles": output
-        }
+        return {"Nombre del Sistema Operativo": "macOS", "Detalles": output}
     return {
         "Nombre del Sistema Operativo": platform.system(),
         "Versión del Sistema Operativo": platform.version(),
         "Arquitectura": platform.architecture()[0],
     }
+
 
 def get_cpu_info():
     # Recopila información detallada del procesador (CPU) para macOS, Windows y Linux.
@@ -69,6 +81,7 @@ def get_cpu_info():
 
     return cpu_info or {"Error": "No se pudo obtener información de la CPU"}
 
+
 def get_gpu_info():
     # Recopila información detallada de las tarjetas gráficas (GPUs) para macOS, Windows y Linux.
     gpu_info = []
@@ -100,7 +113,7 @@ def get_gpu_info():
                     gpu["Nombre"] = value
                 elif key == "AdapterRAM":
                     try:
-                        gpu["Memoria Dedicada (MB)"] = round(int(value) / (1024 ** 2), 2)
+                        gpu["Memoria Dedicada (MB)"] = round(int(value) / (1024**2), 2)
                     except ValueError:
                         gpu["Memoria Dedicada (MB)"] = "No disponible"
                 elif key == "DriverVersion":
@@ -115,32 +128,53 @@ def get_gpu_info():
         if not command_exists("lspci"):
             return [{"Error": "Comando lspci no disponible"}]
         cmd_lspci = "lspci | grep -i vga"
-        output_lspci = execute_command(cmd_lspci, description="listado de GPUs en Linux")
+        output_lspci = execute_command(
+            cmd_lspci, description="listado de GPUs en Linux"
+        )
         output_nvidia = None
-        if any("NVIDIA" in line for line in output_lspci.splitlines()) and command_exists("nvidia-smi"):
+        if any(
+            "NVIDIA" in line for line in output_lspci.splitlines()
+        ) and command_exists("nvidia-smi"):
             cmd_nvidia = "nvidia-smi --query-gpu=driver_version,memory.total --format=csv,noheader"
-            output_nvidia = execute_command(cmd_nvidia, description="información de la GPU NVIDIA en Linux")
+            output_nvidia = execute_command(
+                cmd_nvidia, description="información de la GPU NVIDIA en Linux"
+            )
             output_nvidia_lines = output_nvidia.splitlines()
         for index, line in enumerate(output_lspci.splitlines()):
             gpu = {
                 "Nombre": line.split(":")[-1].strip(),
-                "Memoria Dedicada (MB)": output_nvidia_lines[index].split(',')[1].strip() if output_nvidia and "NVIDIA" in line else "Desconocida",
-                "Versión del Controlador": output_nvidia_lines[index].split(',')[0].strip() if output_nvidia and "NVIDIA" in line else "Desconocida"
+                "Memoria Dedicada (MB)": (
+                    output_nvidia_lines[index].split(",")[1].strip()
+                    if output_nvidia and "NVIDIA" in line
+                    else "Desconocida"
+                ),
+                "Versión del Controlador": (
+                    output_nvidia_lines[index].split(",")[0].strip()
+                    if output_nvidia and "NVIDIA" in line
+                    else "Desconocida"
+                ),
             }
             gpu_info.append(gpu)
 
     return gpu_info or [{"Error": "No se pudo obtener información de las GPUs"}]
+
 
 def get_motherboard_info():
     # Recopila información de la placa base para macOS, Windows y Linux.
     motherboard_info = {}
 
     if platform.system() == "Darwin":
-        motherboard_info["Error"] = "Información de la placa base no disponible en macOS mediante comandos estándar"
+        motherboard_info["Error"] = (
+            "Información de la placa base no disponible en macOS mediante comandos estándar"
+        )
 
     elif platform.system() == "Windows":
-        cmd = "wmic baseboard get product,manufacturer,version,serialnumber /format:list"
-        output = execute_command(cmd, description="información de la placa base en Windows")
+        cmd = (
+            "wmic baseboard get product,manufacturer,version,serialnumber /format:list"
+        )
+        output = execute_command(
+            cmd, description="información de la placa base en Windows"
+        )
         for line in output.splitlines():
             if "=" in line:
                 key, value = line.split("=", 1)
@@ -150,13 +184,17 @@ def get_motherboard_info():
         if not command_exists("dmidecode"):
             return {"Error": "Comando dmidecode no disponible"}
         cmd = "sudo dmidecode -t baseboard | grep -E 'Manufacturer|Product Name|Version|Serial Number'"
-        output = execute_command(cmd, description="información de la placa base en Linux")
+        output = execute_command(
+            cmd, description="información de la placa base en Linux"
+        )
         for line in output.splitlines():
             if ":" in line:
                 key, value = line.split(":", 1)
                 motherboard_info[key.strip()] = value.strip()
 
-    return motherboard_info or {"Error": "No se pudo obtener información de la placa base"}
+    return motherboard_info or {
+        "Error": "No se pudo obtener información de la placa base"
+    }
 
 
 def get_memory_info():
@@ -189,7 +227,7 @@ def get_memory_info():
             if "=" in line:
                 key, value = line.split("=", 1)
                 if key.strip() == "Capacity":
-                    module["Capacidad (GB)"] = round(int(value.strip()) / (1024 ** 3), 2)
+                    module["Capacidad (GB)"] = round(int(value.strip()) / (1024**3), 2)
                 elif key.strip() == "Speed":
                     module["Velocidad (MHz)"] = value.strip()
                 elif key.strip() == "Manufacturer":
@@ -217,6 +255,7 @@ def get_memory_info():
 
     return memory_info or [{"Error": "No se pudo obtener información de la RAM"}]
 
+
 def get_storage_info():
     # Recopila información detallada del almacenamiento para macOS, Windows y Linux.
     storage_info = []
@@ -225,7 +264,9 @@ def get_storage_info():
         if not command_exists("diskutil"):
             return [{"Error": "Comando diskutil no disponible en macOS"}]
         cmd = "diskutil info -all"
-        output = execute_command(cmd, description="información de almacenamiento en macOS")
+        output = execute_command(
+            cmd, description="información de almacenamiento en macOS"
+        )
         storage = {}
         for line in output.splitlines():
             if "Device Identifier:" in line:
@@ -243,8 +284,12 @@ def get_storage_info():
             storage_info.append(storage)
 
     elif platform.system() == "Windows":
-        cmd = "wmic diskdrive get caption, size, mediaType, firmwareRevision /format:list"
-        output = execute_command(cmd, description="información de almacenamiento en Windows")
+        cmd = (
+            "wmic diskdrive get caption, size, mediaType, firmwareRevision /format:list"
+        )
+        output = execute_command(
+            cmd, description="información de almacenamiento en Windows"
+        )
         disk = {}
         for line in output.splitlines():
             if "=" in line:
@@ -256,7 +301,7 @@ def get_storage_info():
                         disk = {}
                     disk["Nombre"] = value
                 elif key == "Size":
-                    disk["Capacidad (GB)"] = round(int(value) / (1024 ** 3), 2)
+                    disk["Capacidad (GB)"] = round(int(value) / (1024**3), 2)
                 elif key == "MediaType":
                     disk["Tipo"] = value
                 elif key == "FirmwareRevision":
@@ -268,35 +313,44 @@ def get_storage_info():
         if not command_exists("lsblk"):
             return [{"Error": "Comando lsblk no disponible"}]
         cmd = "lsblk -o NAME,SIZE,TYPE,MODEL | grep disk"
-        output = execute_command(cmd, description="información de almacenamiento en Linux")
+        output = execute_command(
+            cmd, description="información de almacenamiento en Linux"
+        )
         for line in output.splitlines():
-            parts = re.split(r'\s+', line.strip())
+            parts = re.split(r"\s+", line.strip())
             if len(parts) >= 4:
-                storage_info.append({
-                    "Nombre": parts[0],
-                    "Capacidad": parts[1],
-                    "Tipo": parts[2],
-                    "Modelo": " ".join(parts[3:])
-                })
+                storage_info.append(
+                    {
+                        "Nombre": parts[0],
+                        "Capacidad": parts[1],
+                        "Tipo": parts[2],
+                        "Modelo": " ".join(parts[3:]),
+                    }
+                )
 
-    return storage_info or [{"Error": "No se pudo obtener información del almacenamiento"}]
+    return storage_info or [
+        {"Error": "No se pudo obtener información del almacenamiento"}
+    ]
+
 
 def save_to_json(data, filename="OS_HW.json"):
     # Crear la carpeta de salida con la fecha actual
     json_folder = f"Archivos-JSON/{datetime.now().strftime('%Y-%m-%d')}"
     if not os.path.exists(json_folder):
         os.makedirs(json_folder)
-    
+
     # Guardar el archivo JSON en la carpeta correspondiente
     filepath = os.path.join(json_folder, filename)
     if os.path.exists(filepath):
         with open(filepath, "r", encoding="utf-8") as json_file:
             existing_data = json.load(json_file)
         if existing_data == data:
-            print(f"Los datos ya están actualizados en {filename}. No se realizaron cambios.")
+            print(
+                f"Los datos ya están actualizados en {filename}. No se realizaron cambios."
+            )
             return
         print("Los datos han cambiado. Actualizando el archivo...")
-    
+
     with open(filepath, "w", encoding="utf-8") as json_file:
         json.dump(data, json_file, ensure_ascii=False, indent=4)
     print(f"Información guardada en {filepath}")
@@ -345,6 +399,7 @@ def main():
         "Almacenamiento": storage_info,
     }
     save_to_json(full_data)
+
 
 if __name__ == "__main__":
     main()

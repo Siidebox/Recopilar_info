@@ -1,0 +1,1671 @@
+{
+    "fecha_recoleccion": "2024-11-26 17:43:10",
+    "aplicaciones": [
+        {
+            "nombre": "Ryzen Controller 2.3.0",
+            "version": "2.3.0",
+            "fabricante": "Ryzen Controller Team",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "AMD Software",
+            "version": "23.4.2",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\Program Files\\AMD\\CIM\\BIN64",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "CPUID CPU-Z 1.99",
+            "version": "1.99",
+            "fabricante": "CPUID, Inc.",
+            "ruta_instalacion": "C:\\Program Files\\CPUID\\CPU-Z\\",
+            "fecha_instalacion": "20220213"
+        },
+        {
+            "nombre": "CyberGhost 8",
+            "version": "8.4.9.14426",
+            "fabricante": "CyberGhost S.R.L.",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Docker Desktop",
+            "version": "4.19.0",
+            "fabricante": "Docker Inc.",
+            "ruta_instalacion": "C:\\Program Files\\Docker\\Docker",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Git",
+            "version": "2.37.3",
+            "fabricante": "The Git Development Community",
+            "ruta_instalacion": "C:\\Program Files\\Git\\",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\WINDOWS\\System32\\",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Aplicaciones de Microsoft 365 para empresas - es-es",
+            "version": "16.0.18129.20158",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\Program Files\\Microsoft Office",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Hades",
+            "version": "Desconocido",
+            "fabricante": "Supergiant Games",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Hades",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Wallpaper Engine",
+            "version": "Desconocido",
+            "fabricante": "Wallpaper Engine Team",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "TAP-Windows 9.21.2",
+            "version": "9.21.2",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "TeamViewer",
+            "version": "15.41.8",
+            "fabricante": "TeamViewer",
+            "ruta_instalacion": "C:\\Program Files\\TeamViewer",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "WinRAR 6.00 (64-bit)",
+            "version": "6.00.0",
+            "fabricante": "win.rar GmbH",
+            "ruta_instalacion": "C:\\Program Files\\WinRAR\\",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "XAMPP",
+            "version": "8.0.28-0",
+            "fabricante": "Apache Friends",
+            "ruta_instalacion": "C:\\xampp",
+            "fecha_instalacion": "20230422"
+        },
+        {
+            "nombre": "Python 3.10.7 Standard Library (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Python 3.10.7 Test Suite (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "PowerShell 7-x64",
+            "version": "7.2.24.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241106"
+        },
+        {
+            "nombre": "RyzenMasterSDK",
+            "version": "1.2.3.5",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "Branding64",
+            "version": "1.00.0008",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "Python 3.10.7 pip Bootstrap (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 x64 Additional Runtime - 11.0.61030",
+            "version": "11.0.61030",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210523"
+        },
+        {
+            "nombre": "Windows Subsystem for Linux WSLg Preview",
+            "version": "1.0.27",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230430"
+        },
+        {
+            "nombre": "Oracle VM VirtualBox 6.1.40",
+            "version": "6.1.40",
+            "fabricante": "Oracle Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20221109"
+        },
+        {
+            "nombre": "Python 3.10.7 Documentation (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2022 X64 Minimum Runtime - 14.40.33816",
+            "version": "14.40.33816",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241023"
+        },
+        {
+            "nombre": "64 Bit HP CIO Components Installer",
+            "version": "8.2.1",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220715"
+        },
+        {
+            "nombre": "Python 3.10.7 Add to Path (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2022 X64 Additional Runtime - 14.40.33816",
+            "version": "14.40.33816",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241023"
+        },
+        {
+            "nombre": "VNC Viewer 7.1.0",
+            "version": "7.1.0.49525",
+            "fabricante": "RealVNC",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230419"
+        },
+        {
+            "nombre": "Java(TM) SE Development Kit 17.0.7 (64-bit)",
+            "version": "17.0.7.0",
+            "fabricante": "Oracle Corporation",
+            "ruta_instalacion": "C:\\Program Files\\Java\\jdk-17\\",
+            "fecha_instalacion": "20230422"
+        },
+        {
+            "nombre": "CyberGhost TUN",
+            "version": "1.0",
+            "fabricante": "CyberGhost S.R.L.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230303"
+        },
+        {
+            "nombre": "AMD User Experience Program Installer",
+            "version": "2240.51.01.412",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "Microsoft Visual Studio Installer",
+            "version": "2.11.69.53063",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "\"C:\\Program Files (x86)\\Microsoft Visual Studio\\Installer\"",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Python 3.10.7 Tcl/Tk Support (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "VMware Player",
+            "version": "16.2.4",
+            "fabricante": "VMware, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20221014"
+        },
+        {
+            "nombre": "AMD Settings",
+            "version": "2023.0412.2328.1963",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "Application Verifier x64 External Package",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Comprobación de estado de PC Windows",
+            "version": "3.6.2204.08001",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220424"
+        },
+        {
+            "nombre": "Office 16 Click-to-Run Licensing Component",
+            "version": "16.0.18129.20158",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241116"
+        },
+        {
+            "nombre": "Office 16 Click-to-Run Extensibility Component",
+            "version": "16.0.18129.20100",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241031"
+        },
+        {
+            "nombre": "Office 16 Click-to-Run Localization Component",
+            "version": "16.0.18129.20100",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241031"
+        },
+        {
+            "nombre": "Windows Subsystem for Linux",
+            "version": "2.3.26.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241113"
+        },
+        {
+            "nombre": "Eclipse Temurin JDK con Hotspot 11.0.18+10 (x64)",
+            "version": "11.0.18.10",
+            "fabricante": "Eclipse Adoptium",
+            "ruta_instalacion": "C:\\Program Files\\Eclipse Adoptium\\jdk-11.0.18.10-hotspot\\",
+            "fecha_instalacion": "20230322"
+        },
+        {
+            "nombre": "VS Script Debugging Common",
+            "version": "16.0.102.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Node.js",
+            "version": "18.15.0",
+            "fabricante": "Node.js Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230406"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2019 X64 Debug Runtime - 14.29.30139",
+            "version": "14.29.30139",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Teams Meeting Add-in for Microsoft Office",
+            "version": "1.24.25702",
+            "fabricante": "Microsoft",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20241031"
+        },
+        {
+            "nombre": "Comprobación de estado de PC Windows",
+            "version": "3.5.2204.04001",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "AMD DVR64",
+            "version": "1.0.2",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "NVIDIA Controlador de gráficos 535.98",
+            "version": "535.98",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.Driver.{FE02BFC9-D340-4BA6-86C1-40B21A62F7DB}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA GeForce Experience 3.27.0.112",
+            "version": "3.27.0.112",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.GFExperience.{FBA856FA-BB9C-4C49-974A-ADA60BFCCDBE}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "NVIDIA Optimus Update 39.5.0.0",
+            "version": "39.5.0.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.Optimus.{17168836-8B28-460E-82EC-B659293ED32C}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Software del sistema PhysX 9.21.0713",
+            "version": "9.21.0713",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "Actualización de NVIDIA 39.5.0.0",
+            "version": "39.5.0.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\Display.Update.{2747CEB3-1607-4B2F-A0CF-A54DFEF43EB2}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA FrameView SDK 1.3.8513.32290073",
+            "version": "1.3.8513.32290073",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA SHIELD Streaming",
+            "version": "7.1.32193813",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\NvStreamSrv",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA GPX Common OSS binaries (POCO, OpenSSL, libprotobuf)",
+            "version": "7.1",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\GpxCommon.Oss.{0506AE43-7276-4E7E-93B5-633CAAC4FCD7}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Controlador de audio HD 1.3.40.14",
+            "version": "1.3.40.14",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\HDAudio.Driver.{4E2EA2BA-7448-4C89-A2F4-3A29D2DAE065}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Install Application",
+            "version": "2.1002.394.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\InstallerCore",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Backend",
+            "version": "39.5.0.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\NVIDIA Corporation\\Update Core",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Container",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\NvContainer",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA TelemetryApi helper for NvContainer",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.ContainerTelemetryApiHelper.{3FAB4581-0ADF-4D95-AF06-A6F8309EBBD1}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA LocalSystem Container",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.LocalSystem.{5A0661F2-B040-4BB7-825A-882E2359C60E}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Message Bus for NvContainer",
+            "version": "1.34",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.MessageBus.{08C58817-9FF6-4698-B4B5-B7CB14829055}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA NVAPI Monitor plugin for NvContainer",
+            "version": "1.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.NvapiMonitor.{D70AD118-47FE-4E32-B5E6-E074FCD02D6D}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA NetworkService Container",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.ServiceUser.{26227244-E19A-4308-836A-D7FE6797F1B2}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Session Container",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.Session.{05D60DC0-B70F-4A17-BD98-D68909911365}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA User Container",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvContainer.User.{87F1B9D9-81F3-4FEE-AB84-FBB9E44ED2FC}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA NvModuleTracker",
+            "version": "6.14.25214.24630",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvModuleTracker.Driver.{9903EC4E-A552-4EF0-91E8-986A4787D9F1}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA NodeJS",
+            "version": "3.27.0.112",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\NVIDIA Corporation\\NvNode",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Watchdog Plugin for NvContainer",
+            "version": "1.37",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvPlugin.Watchdog.{5052D763-8C41-4686-8A42-94D80A86572F}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Telemetry Client",
+            "version": "17.1.7.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\NvTelemetry",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Virtual Host Controller",
+            "version": "3.05.0.1",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\NvVHCI.{355AB12B-0ED6-4D9D-9F31-A2F24B490C39}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "Nvidia Share",
+            "version": "3.27.0.112",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\OSC.{D9E2E029-24D8-45A3-A98A-27DE7FC69FE9}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA ShadowPlay 3.27.0.112",
+            "version": "3.27.0.112",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\ShadowPlay",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA SHIELD Wireless Controller Driver",
+            "version": "3.27.0.94",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\ShieldWirelessController.{92FE95F2-91E8-4FD2-8E4A-1B8545372C07}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Update Core",
+            "version": "39.5.0.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\NVIDIA Corporation\\Update Core",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "NVIDIA Virtual Audio 4.49.0.0",
+            "version": "4.49.0.0",
+            "fabricante": "NVIDIA Corporation",
+            "ruta_instalacion": "C:\\Program Files\\NVIDIA Corporation\\Installer2\\VirtualAudio.Driver.{E4F688C8-347A-44A0-B58A-8B6E76ACE367}",
+            "fecha_instalacion": "20230628"
+        },
+        {
+            "nombre": "Microsoft Update Health Tools",
+            "version": "5.72.0.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231110"
+        },
+        {
+            "nombre": "Python 3.10.7 Development Libraries (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal CRT Tools x64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Python 3.10.7 Executables (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 x64 Minimum Runtime - 11.0.61030",
+            "version": "11.0.61030",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210523"
+        },
+        {
+            "nombre": "Windows App Certification Kit Native Components",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Comprobación de estado de PC Windows",
+            "version": "3.7.2204.15001",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220909"
+        },
+        {
+            "nombre": "Python 3.10.7 Core Interpreter (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Python 3.10.7 Utility Scripts (64-bit)",
+            "version": "3.10.7150.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "255.255.65535.0",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "AMD WVR64",
+            "version": "1.0.2",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230502"
+        },
+        {
+            "nombre": "Microsoft Visual Studio Code",
+            "version": "1.95.3",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\Program Files\\Microsoft VS Code\\",
+            "fecha_instalacion": "20241122"
+        },
+        {
+            "nombre": "Windows SDK DirectX x64 Remote",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows Subsystem for Linux Update",
+            "version": "5.10.102.1",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20230430"
+        },
+        {
+            "nombre": "Epic Games Launcher Prerequisites (x64)",
+            "version": "1.0.0.0",
+            "fabricante": "Epic Games, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210415"
+        },
+        {
+            "nombre": "Visual Studio Build Tools 2019",
+            "version": "16.11.18",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "AMD Chipset Software",
+            "version": "4.03.03.431",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Google Chrome",
+            "version": "131.0.6778.86",
+            "fabricante": "Google LLC",
+            "ruta_instalacion": "C:\\Program Files\\Google\\Chrome\\Application",
+            "fecha_instalacion": "20241122"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Intego Antivirus",
+            "version": "2.0.1.6",
+            "fabricante": "intego",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Intego",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Microsoft Edge",
+            "version": "131.0.2903.63",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+            "fecha_instalacion": "20241123"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "1.3.195.39",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "WebView2 Runtime de Microsoft Edge",
+            "version": "131.0.2903.63",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application",
+            "fecha_instalacion": "20241124"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Nmap 7.95",
+            "version": "7.95",
+            "fabricante": "Nmap Project",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Npcap",
+            "version": "1.79",
+            "fabricante": "Nmap Project",
+            "ruta_instalacion": "C:\\Program Files\\Npcap",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Skype versión 8.93",
+            "version": "8.93",
+            "fabricante": "Skype Technologies S.A.",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Microsoft\\Skype for Desktop\\",
+            "fecha_instalacion": "20230217"
+        },
+        {
+            "nombre": "Steam",
+            "version": "2.10.91.91",
+            "fabricante": "Valve Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "UDS Client",
+            "version": "3.6.0.0",
+            "fabricante": "Virtual Cable S.L.U.",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Desconocido",
+            "version": "Desconocido",
+            "fabricante": "Desconocido",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "hppM175LaserJetService",
+            "version": "001.014.00480",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Universal CRT Redistributable",
+            "version": "10.0.26624",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_FileTracker_Singleton",
+            "version": "16.10.31303",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Tools arm64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows IoT Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense UAP - en-us",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps DirectX x86 Remote",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "AMD_Chipset_Drivers",
+            "version": "4.03.03.431",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\Chipset_Software\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "vs_filehandler_amd64",
+            "version": "16.11.31503",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Asistente para la instalación de Windows 11",
+            "version": "1.4.19041.1703",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "WinRT Intellisense PPI - en-us",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Libs x64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "HPLaserJet100ColorMFPM175_HelpLearnCenter_SI",
+            "version": "1.00.0000",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "C:\\Program Files (x86)\\HP\\HP LaserJet 100 color MFP M175\\Help_Learn\\",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Epic Online Services",
+            "version": "2.0.36.0",
+            "fabricante": "Epic Games, Inc.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220922"
+        },
+        {
+            "nombre": "Windows SDK Desktop Tools x86",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps Libs",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense IoT - Other Languages",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "HPLJUT",
+            "version": "1.00.0012",
+            "fabricante": "HP",
+            "ruta_instalacion": "C:\\Program Files (x86)\\HP\\HPLJUT\\",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Windows App Certification Kit SupportedApiList x86",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps Contracts",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Libs arm",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinAppDeploy",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps Metadata",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Facade Windows WinMD Versioned",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK DirectX x86 Remote",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense IoT - en-us",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030",
+            "version": "11.0.61030.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2019 X86 Debug Runtime - 14.29.30139",
+            "version": "14.29.30139",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Headers x86",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Launcher Prerequisites (x64)",
+            "version": "1.0.0.0",
+            "fabricante": "Epic Games, Inc.",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Windows SDK Modern Non-Versioned Developer Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Redistributables",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense Mobile - en-us",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows Software Development Kit - Windows 10.0.19041.685",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Windows IoT Extension SDK Contracts",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Headers arm",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal CRT Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_minshellmsi",
+            "version": "16.11.31503",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_communitymsi",
+            "version": "16.11.31911",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows Team Extension SDK Contracts",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "hppLaserJetService",
+            "version": "002.015.00602",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20211011"
+        },
+        {
+            "nombre": "Windows App Certification Kit x64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vcpp_crt.redist.clickonce",
+            "version": "14.29.30139",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal CRT Headers Libraries and Sources",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_filehandler_x86",
+            "version": "16.11.31503",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows Mobile Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "SDK ARM Redistributables",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Teams Machine-Wide Installer",
+            "version": "1.4.0.4167",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210415"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2015-2022 Redistributable (x64) - 14.40.33816",
+            "version": "14.40.33816.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Windows Mobile Extension SDK Contracts",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "MSI Development Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "ToolboxProxy",
+            "version": "1.00.0001",
+            "fabricante": "HP",
+            "ruta_instalacion": "C:\\Program Files (x86)\\HP\\Common\\HPEWSProxy\\",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Windows SDK Desktop Libs x86",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense UAP - Other Languages",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_minshellinteropmsi",
+            "version": "16.10.31306",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2022 X86 Additional Runtime - 14.32.31332",
+            "version": "14.32.31332",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "PowerShell 7.2.24.0-x64",
+            "version": "7.2.24.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps Headers",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK ARM Desktop Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Libs arm64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "HP LaserJet 100 color MFP M175",
+            "version": "Desconocido",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "Python Launcher",
+            "version": "3.10.7917.0",
+            "fabricante": "Python Software Foundation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "hpbDSService",
+            "version": "001.001.05133",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "AMD PSP Driver",
+            "version": "5.18.0.0",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\AMD\\Chipset_Software\\Binaries\\PSP Driver\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "AMD Ryzen Balanced Driver",
+            "version": "7.0.4.4",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\AMD\\Chipset_Software\\Binaries\\RyzenPPKG Driver\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "Windows Desktop Extension SDK Contracts",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK EULA",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporations",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal CRT Redistributable",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "hpbM175DSService",
+            "version": "001.001.05133",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Apps",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal General MIDI DLS Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Epic Games Launcher",
+            "version": "1.3.51.0",
+            "fabricante": "Epic Games, Inc.",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Epic Games\\",
+            "fecha_instalacion": "20220922"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2015-2022 Redistributable (x86) - 14.32.31332",
+            "version": "14.32.31332.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "AMD SBxxx SMBus Driver",
+            "version": "5.12.0.38",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\AMD\\Chipset_Software\\Binaries\\SMBUS Driver\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2022 X86 Minimum Runtime - 14.32.31332",
+            "version": "14.32.31332",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "HP Update",
+            "version": "5.002.006.003",
+            "fabricante": "Hewlett-Packard",
+            "ruta_instalacion": "C:\\Program Files (x86)\\Hp\\HP Software Update",
+            "fecha_instalacion": "20230329"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 x86 Additional Runtime - 11.0.61030",
+            "version": "11.0.61030",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210917"
+        },
+        {
+            "nombre": "AMD I2C Driver",
+            "version": "1.2.0.118",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\AMD\\Chipset_Software\\Binaries\\I2C Driver\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "WinRT Intellisense Desktop - Other Languages",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Signing Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "vs_minshellmsires",
+            "version": "16.10.31303",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense Desktop - en-us",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Universal CRT Tools x86",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 x86 Minimum Runtime - 11.0.61030",
+            "version": "11.0.61030",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20210917"
+        },
+        {
+            "nombre": "HP LJ100 M175 HP Scan",
+            "version": "1.0.302.0",
+            "fabricante": "Hewlett-Packard Co.",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Windows SDK Desktop Headers x64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Headers arm64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030",
+            "version": "11.0.61030.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "vs_communitymsires",
+            "version": "16.10.31213",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows Team Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft .NET Framework 4 Multi-Targeting Pack",
+            "version": "4.0.30319",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Update for  (KB2504637)",
+            "version": "1",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "Desconocido",
+            "fecha_instalacion": "Desconocido"
+        },
+        {
+            "nombre": "InstanceFinder",
+            "version": "1.00.0001",
+            "fabricante": "HP",
+            "ruta_instalacion": "C:\\Program Files (x86)\\HP\\Common\\InstanceFinder\\",
+            "fecha_instalacion": "20231224"
+        },
+        {
+            "nombre": "Windows Desktop Extension SDK",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK AddOn",
+            "version": "10.1.0.0",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Microsoft Visual Studio Setup WMI Provider",
+            "version": "3.7.2182.35401",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20231009"
+        },
+        {
+            "nombre": "Kits Configuration Installer",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "AMD GPIO2 Driver",
+            "version": "2.2.0.130",
+            "fabricante": "Advanced Micro Devices, Inc.",
+            "ruta_instalacion": "C:\\AMD\\Chipset_Software\\Binaries\\GPIO2 Driver\\",
+            "fecha_instalacion": "20220417"
+        },
+        {
+            "nombre": "Microsoft Visual Studio Setup Configuration",
+            "version": "2.11.65.22356",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Desktop Tools x64",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK Modern Versioned Developer Tools",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "SDK ARM Additions",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "WinRT Intellisense PPI - Other Languages",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        },
+        {
+            "nombre": "Windows SDK for Windows Store Managed Apps Libs",
+            "version": "10.1.19041.685",
+            "fabricante": "Microsoft Corporation",
+            "ruta_instalacion": "",
+            "fecha_instalacion": "20220912"
+        }
+    ]
+}
