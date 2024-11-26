@@ -6,10 +6,7 @@ import subprocess
 import re
 from datetime import datetime
 
-# Añadir la carpeta 'scripts' al sys.path para que se puedan importar los módulos
-scripts_folder = os.path.join(os.path.dirname(__file__), 'scripts')
-if scripts_folder not in sys.path:
-    sys.path.insert(0, scripts_folder)
+
 
 from scripts.aplicaciones import main as aplicaciones_main
 from scripts.OS_HW import main as os_hw_main
@@ -36,9 +33,14 @@ def main():
     json_files = ["OS_HW.json", "Red-scan.json", "aplicaciones.json", "Perifericos.json"]
     for json_file in json_files:
         file_path = os.path.join(json_folder, json_file)
+        if not os.path.exists(file_path):
+            print(f"Advertencia: El archivo '{json_file}' no se encontró y será omitido.")
+            continue
+
         with open(file_path, 'r', encoding='utf-8') as file:
             key = json_file.split('.')[0].lower()  # Nombre de la clave en el JSON consolidado
             data[key] = json.load(file)
+
 
     # Crear la carpeta con la fecha actual y guardar el archivo consolidado dentro
     info_folder = datetime.now().strftime("%Y-%m-%d")

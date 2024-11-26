@@ -2,8 +2,11 @@ import platform
 import json
 import os
 import subprocess
-import re
 from datetime import datetime
+
+# Verifica si un comando está disponible en el sistema.
+def comando_disponible(command):
+    return subprocess.run(f"command -v {command}", shell=True, stdout=subprocess.PIPE).returncode == 0
 
 # Clasifica un dispositivo basado en su descripción.
 def clasificar_dispositivo(descripcion):
@@ -23,49 +26,32 @@ def clasificar_dispositivo(descripcion):
     else:
         return "Otros"
 
-# Obtiene periféricos en Windows, incluyendo versiones de controladores.
-def obtener_perifericos_windows():
-    dispositivos = []
-
-    try:
-        # Listar todos los dispositivos con Win32_PnPSignedDriver, incluyendo versiones de controladores
-        output = subprocess.check_output(["wmic", "path", "Win32_PnPSignedDriver", "get", "DeviceName,DriverVersion"], text=True)
-        lineas = output.strip().split("\n")[1:]  # Ignorar encabezado
-        for linea in lineas:
-            if linea.strip():
-                partes = linea.split()
-                descripcion = " ".join(partes[:-1]).strip()
-                version_controlador = partes[-1].strip()
-                
-                if descripcion:
-                    dispositivos.append({
-                        "descripcion": descripcion,
-                        "categoria": clasificar_dispositivo(descripcion),
-                        "version_controlador": version_controlador
-                    })
-    except Exception as e:
-        print(f"Error al ejecutar comandos en Windows: {e}")
-
-    return dispositivos
-
 # Obtiene periféricos en Linux usando lsusb y lshw.
 def obtener_perifericos_linux():
     dispositivos = []
 
-    try:
-        # Obtener dispositivos con lsusb
-        output_lsusb = subprocess.check_output(["lsusb"], text=True)
-        lineas_lsusb = output_lsusb.strip().split("\n")
-        for linea in lineas_lsusb:
-            descripcion = linea.split(":")[-1].strip()
-            dispositivos.append({
-                "descripcion": descripcion,
-                "categoria": clasificar_dispositivo(descripcion),
-                "version_controlador": "No disponible en Linux"
-            })
-
-        # Obtener dispositivos con lshw (si está disponible)
+    # Verifica si lsusb está disponible
+    if comando_disponible("lsusb"):
         try:
+            # Obtener dispositivos con lsusb
+            output_lsusb = subprocess.check_output(["lsusb"], text=True)
+            lineas_lsusb = output_lsusb.strip().split("\n")
+            for linea in lineas_lsusb:
+                descripcion = linea.split(":")[-1].strip()
+                dispositivos.append({
+                    "descripcion": descripcion,
+                    "categoria": clasificar_dispositivo(descripcion),
+                    "version_controlador": "No disponible en Linux"
+                })
+        except subprocess.CalledProcessError as e:
+            print(f"Error al ejecutar 'lsusb': {e}. Puede que no haya dispositivos conectados o el comando haya fallado.")
+    else:
+        print("Advertencia: 'lsusb' no está instalado. No se pueden obtener dispositivos USB.")
+
+    # Verifica si lshw está disponible
+    if comando_disponible("lshw"):
+        try:
+            # Obtener dispositivos con lshw (si está disponible)
             output_lshw = subprocess.check_output(["lshw", "-C", "input"], text=True)
             lineas_lshw = output_lshw.strip().split("\n")
             for linea in lineas_lshw:
@@ -76,47 +62,10 @@ def obtener_perifericos_linux():
                         "categoria": clasificar_dispositivo(descripcion),
                         "version_controlador": "No disponible en Linux"
                     })
-        except FileNotFoundError:
-            print("El comando 'lshw' no está disponible. Para más información detallada, instala 'lshw'.")
-
-    except FileNotFoundError:
-        print("El comando 'lsusb' no está disponible. Asegúrate de tener instalado 'usbutils'.")
-    except subprocess.SubprocessError as e:
-        print(f"Error al ejecutar comandos en Linux: {e}")
-
-    return dispositivos
-
-# Obtiene periféricos en macOS usando system_profiler SPUSBDataType y SPBluetoothDataType.
-def obtener_perifericos_macos():
-    dispositivos = []
-
-    try:
-        # Obtener dispositivos USB con system_profiler
-        output_usb = subprocess.check_output(["system_profiler", "SPUSBDataType"], text=True)
-        lineas_usb = output_usb.strip().split("\n")
-        for linea in lineas_usb:
-            if "Product Name:" in linea:
-                descripcion = linea.split(":")[1].strip()
-                dispositivos.append({
-                    "descripcion": descripcion,
-                    "categoria": clasificar_dispositivo(descripcion),
-                    "version_controlador": "No disponible en macOS"
-                })
-
-        # Obtener dispositivos Bluetooth y otros periféricos
-        output_bt = subprocess.check_output(["system_profiler", "SPBluetoothDataType"], text=True)
-        lineas_bt = output_bt.strip().split("\n")
-        for linea in lineas_bt:
-            if "Name:" in linea:
-                descripcion = linea.split(":")[1].strip()
-                dispositivos.append({
-                    "descripcion": descripcion,
-                    "categoria": clasificar_dispositivo(descripcion),
-                    "version_controlador": "No disponible en macOS"
-                })
-
-    except subprocess.SubprocessError as e:
-        print(f"Error al ejecutar system_profiler en macOS: {e}")
+        except subprocess.CalledProcessError as e:
+            print(f"Error al ejecutar 'lshw': {e}")
+    else:
+        print("Advertencia: 'lshw' no está instalado. No se pueden obtener dispositivos adicionales.")
 
     return dispositivos
 
@@ -126,27 +75,30 @@ def main():
     dispositivos = []
 
     if sistema_operativo == "Windows":
-        dispositivos = obtener_perifericos_windows()
+        # Implementa la función obtener_perifericos_windows() si es necesario
+        pass
     elif sistema_operativo == "Linux":
         dispositivos = obtener_perifericos_linux()
     elif sistema_operativo == "Darwin":  # Darwin es el nombre base de macOS
-        dispositivos = obtener_perifericos_macos()
+        # Implementa la función obtener_perifericos_macos() si es necesario
+        pass
     else:
         print("Sistema operativo no soportado.")
 
+    # Crear la carpeta de salida con la fecha actual
+    json_folder = f"Archivos-JSON/{datetime.now().strftime('%Y-%m-%d')}"
+    if not os.path.exists(json_folder):
+        os.makedirs(json_folder)
+
+    # Guardar el archivo JSON en la carpeta correspondiente, incluso si está vacío
+    filepath = os.path.join(json_folder, "Perifericos.json")
+    with open(filepath, "w", encoding="utf-8") as archivo:
+        json.dump(dispositivos, archivo, indent=4, ensure_ascii=False)
+
     if dispositivos:
-        # Crear la carpeta de salida con la fecha actual
-        json_folder = f"Archivos-JSON/{datetime.now().strftime('%Y-%m-%d')}"
-        if not os.path.exists(json_folder):
-            os.makedirs(json_folder)
-        
-        # Guardar el archivo JSON en la carpeta correspondiente
-        filepath = os.path.join(json_folder, "Perifericos.json")
-        with open(filepath, "w", encoding="utf-8") as archivo:
-            json.dump(dispositivos, archivo, indent=4, ensure_ascii=False)
         print(f"Archivo '{filepath}' generado exitosamente con los periféricos.")
     else:
-        print("No se encontraron periféricos conectados.")
+        print("No se encontraron periféricos conectados. Se ha creado un archivo vacío.")
 
 if __name__ == "__main__":
     main()
