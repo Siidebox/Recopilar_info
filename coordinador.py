@@ -9,7 +9,7 @@ from datetime import datetime
 
 from scripts.aplicaciones import main as aplicaciones_main
 from scripts.OS_HW import main as os_hw_main
-from scripts.perifericos import main as perifericos_main
+
 from scripts.red import main as red_main
 
 
@@ -24,7 +24,7 @@ def main():
     os_hw_main()
     red_main()
     aplicaciones_main()
-    perifericos_main()
+    
 
     # Consolidar todos los archivos JSON en un solo archivo
     data = {}
@@ -34,7 +34,6 @@ def main():
         "OS_HW.json",
         "Red-scan.json",
         "aplicaciones.json",
-        "Perifericos.json",
     ]
     for json_file in json_files:
         file_path = os.path.join(json_folder, json_file)
@@ -55,10 +54,10 @@ def main():
     if not os.path.exists(info_folder):
         os.makedirs(info_folder)
 
-    consolidated_filename = os.path.join(info_folder, "informacion_sistema.json")
-    with open(consolidated_filename, "w", encoding="utf-8") as file:
+    informacion_sistema = os.path.join(info_folder, "informacion_sistema.json")
+    with open(informacion_sistema, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
-    print(f"Archivo consolidado '{consolidated_filename}' generado exitosamente.")
+    print(f"Archivo creado '{informacion_sistema}' generado exitosamente.")
 
 
 if __name__ == "__main__":

@@ -44,15 +44,18 @@ def obtener_aplicaciones_windows():
                     fecha_instalacion = obtener_valor_registro(
                         subclave_abierta, "InstallDate"
                     )
-                    aplicaciones.append(
-                        {
-                            "nombre": nombre,
-                            "version": version,
-                            "fabricante": fabricante,
-                            "ruta_instalacion": ruta_instalacion,
-                            "fecha_instalacion": fecha_instalacion,
-                        }
-                    )
+
+                    # Filtrar aplicaciones con nombre desconocido
+                    if nombre != "Desconocido":
+                        aplicaciones.append(
+                            {
+                                "nombre": nombre,
+                                "version": version,
+                                "fabricante": fabricante,
+                                "ruta_instalacion": ruta_instalacion if ruta_instalacion != "Desconocido" else None,
+                                "fecha_instalacion": fecha_instalacion if fecha_instalacion != "Desconocido" else None,
+                            }
+                        )
                 except FileNotFoundError:
                     continue
         except Exception as e:
@@ -82,8 +85,6 @@ def obtener_aplicaciones_linux():
                         "nombre": detalles[0],
                         "version": detalles[1],
                         "arquitectura": detalles[2],
-                        "ruta_instalacion": "Desconocida",
-                        "fecha_instalacion": "Desconocida",
                     }
                 )
     except FileNotFoundError:
@@ -123,8 +124,9 @@ def obtener_aplicaciones_macos():
                         "%Y-%m-%d %H:%M:%S"
                     )
                 except ValueError:
-                    app_info["fecha_actualizacion"] = "Desconocida"
-                aplicaciones.append(app_info.copy())
+                    app_info["fecha_actualizacion"] = None
+                if app_info.get("nombre") and app_info["nombre"] != "Desconocido":
+                    aplicaciones.append(app_info.copy())
     except subprocess.SubprocessError as e:
         print(f"Error al listar aplicaciones en macOS: {e}")
     return aplicaciones
@@ -163,3 +165,7 @@ def main():
         )
     else:
         print("No se encontraron aplicaciones o no se pudo acceder a la información.")
+
+
+if __name__ == "__main__":
+    main()
