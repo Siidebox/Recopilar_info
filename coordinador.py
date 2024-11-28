@@ -24,7 +24,6 @@ def main():
     os_hw_main()
     red_main()
     aplicaciones_main()
-    
 
     # Consolidar todos los archivos JSON en un solo archivo
     data = {}

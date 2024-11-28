@@ -52,8 +52,16 @@ def obtener_aplicaciones_windows():
                                 "nombre": nombre,
                                 "version": version,
                                 "fabricante": fabricante,
-                                "ruta_instalacion": ruta_instalacion if ruta_instalacion != "Desconocido" else None,
-                                "fecha_instalacion": fecha_instalacion if fecha_instalacion != "Desconocido" else None,
+                                "ruta_instalacion": (
+                                    ruta_instalacion
+                                    if ruta_instalacion != "Desconocido"
+                                    else None
+                                ),
+                                "fecha_instalacion": (
+                                    fecha_instalacion
+                                    if fecha_instalacion != "Desconocido"
+                                    else None
+                                ),
                             }
                         )
                 except FileNotFoundError:
